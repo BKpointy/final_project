@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/css/style_for_quiz.css">
+    <title>Result</title>
+</head>
+<body>
+    <div class="empty_content_conteiner">
+    <div class="nothing"></div>
+    <div id="result" class="as_reg_block"><br><br>
+        <div class="results">
+        {% if result %}
+            <p align="center">Правильных ответов:</p>
+            <p class="result-number" align="center">{{ result }} / 12</p>
+        {% endif %}
+        </div>
+        <h4 align="center">Спасибо за прохождение нашей викторины!</h4>
+        <h3 align="center">Хотите вернуться к статье?</h3>
+        <div class="empty_button_slot">
+            <a href="/" class="button">Вернуться</a>
+        </div>
+    </div>
+    </div>
+</body>
+</html>
